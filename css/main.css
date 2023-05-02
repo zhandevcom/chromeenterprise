@@ -65,12 +65,31 @@ body {
     border-radius: 10px;
 }
 
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search img {
+    width: 14px;
+    height: 14px;
+    margin-right: -25px;
+    position: relative;
+    z-index: 1;
+}
+
 .search input {
     padding: 10px 25px;
     border-radius: 5px;
     outline: none;
     border: none;
     background-color: #eee;
+}
+
+.search input::placeholder {
+    padding-left: 10px;
+    color: #777;
 }
 
 @media screen {
