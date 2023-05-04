@@ -8,18 +8,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #fff;
+    background: #505050;
 }
 
 h3 {
     font-weight: 600;
     font-size: 27px;
-}
-
-.nav {
-    padding: 28px 0;
-    border-bottom: 1px solid #bebebe;
-    background-color: #fff;
 }
 
 .container {
@@ -28,6 +22,10 @@ h3 {
 }
 
 .nav-row {
+    padding: 0 10px;
+    background-color: #fff;
+    padding: 28px 25px;
+    border-bottom: 1px solid #bebebe;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +39,7 @@ h3 {
 
 .list-item {
     display: flex;
-    gap: 64px;
+    gap: 40px;
 }
 
 .list-item .list-item__link {
@@ -172,7 +170,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     background: #101010;
-    padding: 30px 100px;
+    padding: 30px 40px;
 }
 
 .footer-text {
@@ -220,7 +218,26 @@ h3 {
     .container {
         max-width: 540px;
     }
+    .logo {
+        width: 200px;
+        line-height: 1.5em;
+    }
+    .list-item{
+        display: block;
+    }
+    .list-item li {
+        margin-top: 10px;
+    }
     .serial-info__description {
         width: 505px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+    }
+    .serial-info__description {
+        width: 479px;
     }
 }
